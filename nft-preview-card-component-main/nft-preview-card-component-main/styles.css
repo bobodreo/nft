@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    /*### Primary*/
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+    /*### Neutral*/
+
+--Very-dark-blue-bbg: hsl(217, 54%, 11%);
+--Very-dark-blue-cbg: hsl(216, 50%, 16%);
+--Very-dark-blue-l: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width ){
+
+}
+
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: var(--Very-dark-blue-bbg);
+    font-family: "Outfit",sans-serif;
+
+}
+.bg__tot{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+.container{
+    border-radius: 10px;
+    position: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    width: 370px;
+    background-color: var(--Very-dark-blue-cbg);
+    padding-bottom: 0%;
+    /*box-shadow:  7px 7px 5px  var(--Very-dark-blue-l), -7px 7px 5px  var(--Very-dark-blue-l);*/
+}
+.container h1{
+    font-weight: bold;
+    color: var(--White);
+    text-align: left;
+    font-size: 25px;
+}
+
+.container .logo{
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.container p{
+    color: var(--Soft-blue);
+}
+.container .description{
+    margin: 0 0 10px 0;
+    text-align: left;
+   padding: 5px 0px;
+   line-height: 1.6;
+
+}
+
+.container .prix {
+    display: inline-flex;
+    padding: 0%;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-color: var(--Soft-blue);
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.container .prix img{
+    height: 50%;
+    margin-top: 14px;
+}
+.container .prix .eth,.heure{
+    display: flex;
+    width: 50%;
+}
+.container .prix .heure .temps,.eth .cout{
+   margin-left: 15px;
+}
+.container .prix .heure{
+    padding-left: 20px;
+}
+.container .prix .eth .cout{
+    color: var(--Cyan);
+    font-weight: bold;
+}
+ 
+.container .createur{
+    display: flex;
+    height: 100px;
+    padding: 11px 0 0 0;
+    padding: auto;
+}
+.container .createur img{
+    height: 60px;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: var(--White);
+    border-radius: 50%;
+    border-width: 1px;
+}
+.container .createur .crea, .crea2{
+    display: inline-flex;
+    padding-top: 10px;
+}
+.container .createur .crea2{
+    color: var(--White);
+    padding-bottom: 0%;
+
+}
+.container .createur .crea2:hover, h1:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
